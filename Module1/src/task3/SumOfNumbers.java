@@ -1,4 +1,4 @@
-// Task 3
+package task3;// Task 3
 
 //Run the following Java program that asks the user three integers and prints their sum.
 
@@ -8,8 +8,8 @@
 // Add the explanation as a comment to the program. Commit your changes to GitHub.
 
 import java.util.Scanner;
-// I have changed the SumOfNumbers into Exercise1_3 here
-public class Exercise1_3 {
+// I have changed the SumOfNumbers into task3.Exercise1_3 here
+public class SumOfNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

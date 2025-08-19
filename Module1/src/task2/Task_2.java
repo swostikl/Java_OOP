@@ -1,4 +1,4 @@
-//Task 2
+package task2;
 //Write a program that prints the following:
 //       *
 //      ***
@@ -6,7 +6,7 @@
 //    *******
 
 
-public class Exercise1_2 {
+public class Task_2 {
     public static void main(String[] args) {
         System.out.println("   *");
         System.out.println("  ***");
