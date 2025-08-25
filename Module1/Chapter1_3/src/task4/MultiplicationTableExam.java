@@ -1,6 +1,6 @@
 package task4;
 import java.util.Scanner;
-public class multiplicationTableExam {
+public class MultiplicationTableExam {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
