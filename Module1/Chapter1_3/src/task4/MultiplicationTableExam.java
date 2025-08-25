@@ -13,7 +13,7 @@ public class MultiplicationTableExam {
                 int number1 = (int)(Math.random() * 10) + 1;
                 int number2 = (int)(Math.random() * 10) + 1;
 
-                System.out.print( "Problem " + i +  " : What is " + number1 + " * " + number2 + " ? " );
+                System.out.print( i +  " : What is " + number1 + " * " + number2 + " ? " );
                 int answer = input.nextInt();
 
                 if (answer == number1 * number2){
