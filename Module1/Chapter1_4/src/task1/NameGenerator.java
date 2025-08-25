@@ -2,7 +2,7 @@ package task1;
 
 import java.util.Scanner;
 
-public class nameGenerator {
+public class NameGenerator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

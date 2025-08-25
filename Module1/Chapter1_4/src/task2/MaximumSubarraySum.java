@@ -1,7 +1,7 @@
 package task2;
 
 import java.util.Scanner;
-public class maximumSubarraySum {
+public class MaximumSubarraySum {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
