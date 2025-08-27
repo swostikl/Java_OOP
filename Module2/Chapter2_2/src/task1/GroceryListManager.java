@@ -6,7 +6,7 @@ public class GroceryListManager {
     private final ArrayList<String>  groceryList = new ArrayList<>();
 
 
-    public ArrayList<String> getItems() {
+    public ArrayList<String>  getItems() {
 
         return groceryList;
     }
@@ -66,12 +66,12 @@ class Main{
 
         groceryList.addItem("Apple");
         groceryList.addItem("Banana");
-        groceryList.addItem("Cheese");
+        groceryList.addItem("Bread");
 
         groceryList.displayItems();
 
         groceryList.removeItem("Apple");
-        groceryList.removeItem("Tomato");
+        groceryList.removeItem("Orange");
 
         groceryList.displayItems();
 
