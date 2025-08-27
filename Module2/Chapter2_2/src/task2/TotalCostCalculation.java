@@ -8,24 +8,23 @@ public class TotalCostCalculation {
     // store item and its cost
     private final HashMap<String, Double> groceryList;
 
-    // Constructor
     public TotalCostCalculation() {
         groceryList = new HashMap<>();
     }
 
-    // Add an item with cost
+    // Adding an item with cost
     public void addItem(String item, double cost) {
         groceryList.put(item, cost);
-        System.out.println("Added: " + item + " ($" + cost + ")");
+        System.out.println("Added: " + item + " $" + cost );
     }
 
-    // Remove an item
+    // Removing an item
     public void removeItem(String item) {
         if (groceryList.containsKey(item)) {
             groceryList.remove(item);
             System.out.println("Removed: " + item);
         } else {
-            System.out.println("Item " + item + " not found in the list.");
+            System.out.println("Item " + item + " is not found in the list.");
         }
     }
 
@@ -34,7 +33,7 @@ public class TotalCostCalculation {
         if (groceryList.isEmpty()) {
             System.out.println("The grocery list is empty.");
         } else {
-            System.out.println("Grocery List:");
+            System.out.println("Grocery List are : ");
             int i = 1;
             for (Map.Entry<String, Double> entry : groceryList.entrySet()) {
                 System.out.println(i + ". " + entry.getKey() + " - $" + entry.getValue());
