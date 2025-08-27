@@ -3,7 +3,7 @@ public class Car {
 
     private double speed;
     private double gasolineLevel;
-    private String typeName;
+    private final String typeName;
 
     // Cruise Controls
     private boolean cruiseControlOn;
