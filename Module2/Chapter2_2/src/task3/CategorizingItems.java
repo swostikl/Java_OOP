@@ -2,19 +2,20 @@ package task3;
 
 import java.util.ArrayList;
 
-class Item {
-    String name;
-    double cost;
-    String category;
-
-    public Item(String name, double cost, String category) {
-        this.name = name;
-        this.cost = cost;
-        this.category = category;
-    }
-}
 
 public class CategorizingItems {
+
+    private static class Item { //making inner class
+        String name;
+        double cost;
+        String category;
+
+        public Item(String name, double cost, String category) {
+            this.name = name;
+            this.cost = cost;
+            this.category = category;
+        }
+    }
 
     private final ArrayList<Item> groceryList;
 
@@ -26,7 +27,7 @@ public class CategorizingItems {
     public void addItem(String name, double cost, String category) {
         Item item = new Item(name, cost, category);
         groceryList.add(item);
-        System.out.println("Added: " + name + " ($" + cost + ") in category: " + category);
+        System.out.println("Added: " + name + " $" + cost + " in category: " + category);
     }
 
     // Display all items
@@ -37,7 +38,7 @@ public class CategorizingItems {
             System.out.println("Grocery List:");
             int i = 1;
             for (Item item : groceryList) {
-                System.out.println(i + ". " + item.name + " - $" + item.cost + " (" + item.category + ")");
+                System.out.println(i + ". " + item.name + " : $" + item.cost + " " + item.category );
                 i++;
             }
         }
@@ -50,7 +51,7 @@ public class CategorizingItems {
         int i = 1;
         for (Item item : groceryList) {
             if (item.category.equalsIgnoreCase(category)) {
-                System.out.println(i + ". " + item.name + " - $" + item.cost);
+                System.out.println(i + ". " + item.name + " : $" + item.cost);
                 i++;
                 found = true;
             }
