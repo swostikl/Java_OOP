@@ -2,7 +2,7 @@ package task4;
 
 public class CarDrive {
     public static void main(String[] args) {
-        Car myCar = new Car("Toyota");
+        Car myCar = new Car("Skoda");
 
         myCar.fillTank();
         System.out.println("Car type: " + myCar.getTypeName());

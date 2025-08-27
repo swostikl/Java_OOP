@@ -111,36 +111,36 @@ public class GroceryTestTester {
 
     //Main method to test new features
     public static void main(String[] args) {
-        GroceryTestTester manager = new GroceryTestTester();
+        GroceryTestTester groceryList    = new GroceryTestTester();
 
         //  Test total cost with quantities
-        manager.addItem("Apple", 1.5, "Fruits", 3);
-        manager.addItem("Milk", 2.0, "Dairy", 2);
-        manager.addItem("Bread", 1.2, "Bakery", 1);
-        manager.addItem("Banana", 1.0, "Fruits", 5);
+        groceryList.addItem("Apple", 1.5, "Fruits", 3);
+        groceryList.addItem("Milk", 2.0, "Dairy", 2);
+        groceryList.addItem("Bread", 1.2, "Bakery", 1);
+        groceryList.addItem("Banana", 1.0, "Fruits", 5);
 
         System.out.println("\n Display All Items : ");
-        manager.displayItems();
+       groceryList.displayItems();
 
-        double total = manager.calculateTotalCost();
+        double total = groceryList.calculateTotalCost();
         System.out.println("Total cost of groceries: $" + total);
 
         //Test categories
         System.out.println("\n--- Display Fruits Category ---");
-        manager.displayByCategory("Fruits");
+        groceryList.displayByCategory("Fruits");
 
         System.out.println("\n--- Display Dairy Category ---");
-        manager.displayByCategory("Dairy");
+        groceryList.displayByCategory("Dairy");
 
         // Test quantity updates
         System.out.println("\n--- Update Quantity ---");
-        manager.updateQuantity("Bread", 4); // update existing
-        manager.updateQuantity("Tomato", 2); // item not in list
+        groceryList.updateQuantity("Bread", 4); // update existing
+        groceryList.updateQuantity("Tomato", 2); // item not in list
 
         System.out.println("\n--- Available Items After Update ---");
-        manager.displayAvailableItems();
+        groceryList.displayAvailableItems();
 
-        double updatedTotal = manager.calculateTotalCost();
+        double updatedTotal = groceryList.calculateTotalCost();
         System.out.println("Updated total cost: $" + updatedTotal);
     }
 }
