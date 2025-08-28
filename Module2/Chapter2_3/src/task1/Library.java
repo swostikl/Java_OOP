@@ -39,5 +39,31 @@ public class Library {
         return false; // if there is not
     }
 
+    // This method used below is for task4
+    // Calculating Average rate
+    public double getAverageRating() {
+        if (books.isEmpty()) {
+            return 0;
+        }
+        double totalRating = 0;
+        for (Book book : books) {
+            totalRating += book.getRating();
+        }
+        return totalRating / books.size();
+    }
+    //Finding most reviewed book
+    public Book getMostReviewedBook() {
+        if (books.isEmpty()) {
+            return null;
+        }
+        Book mostReviewed = books.getFirst();
+        for (Book book : books) {
+            if (book.getReviews().size() > mostReviewed.getReviews().size()) {
+                mostReviewed = book; // update book if it has more reviews
+            }
+        }
+        return mostReviewed;
+    }
+
 }
 
