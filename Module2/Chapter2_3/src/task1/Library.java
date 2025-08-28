@@ -28,6 +28,16 @@ public class Library {
         return foundBooks;
     }
 
+    // This method is for task 3 for availability check so added this in same library and later will import this class in task 3
+
+    public boolean isBookAvailable(String title) {
+        for (Book book : books) {
+            if (book.getBookTitle().equalsIgnoreCase(title)) {
+                return true; // if available
+            }
+        }
+        return false; // if there is not
+    }
 
 }
 
