@@ -1,7 +1,7 @@
 package task1;
 
 import java.util.ArrayList;
-
+// for task1
 public class Book {
     private String bookTitle;
     private String bookAuthor;
@@ -35,6 +35,7 @@ public class Book {
                 ", Year: " + getPublicationYear();
     }
 
+
     // for task 4
     //get rating
     public double getRating() {
@@ -58,5 +59,6 @@ public class Book {
     public ArrayList<String> getReviews() {
         return reviews;
     }
+
 
 }
