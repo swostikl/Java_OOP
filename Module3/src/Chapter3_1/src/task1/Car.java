@@ -4,7 +4,7 @@ public class Car {
 
     private double speed;
     protected double gasolineLevel;
-    protected String typeName;          // changed from private to protected so that other class can inherit
+    private String typeName;          // changed from private to protected so that other class can inherit
 
     public Car(String typeName) {
         speed = 0;
@@ -20,7 +20,7 @@ public class Car {
         }
     }
 
-    void decelerate(int amount) {
+     public void decelerate(int amount) {
         if (gasolineLevel > 0) {
             if (amount > 0) {
                 speed = Math.max(0, speed - amount);

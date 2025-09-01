@@ -20,7 +20,7 @@ public class SportsCar extends Car {
     }
 
     @Override
-    void decelerate(int amount) {
+    public void decelerate(int amount) {
         if (gasolineLevel > 0) {
             // decelerates faster
             super.decelerate(amount * 2);
