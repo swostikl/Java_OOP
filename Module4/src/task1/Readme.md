@@ -1,4 +1,4 @@
-#Task 2
+# Task 2
 **This is a about how i used the GitHub Copilot to complete code for example using Github copilot to write methods in a Calculator class that has the ability to sum positive integers. A negative integer should throw an exception.**
 
 **Calculator Class with Sum Method**
