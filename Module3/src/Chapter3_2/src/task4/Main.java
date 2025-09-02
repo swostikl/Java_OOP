@@ -10,7 +10,7 @@ public class Main {
         car.start();
         car.calculateFuelEfficiency();
         car.stop();
-        ((ElectricVehicle) car).charge();
+        ((ElectricVehicle) car).charge(); // because ElectricVehicle interface has charge so
         System.out.println();
 
         electricMotorcycle.start();
@@ -19,6 +19,8 @@ public class Main {
         ((ElectricVehicle) electricMotorcycle).charge();
         System.out.println();
 
+        // Electric Car also implements vehicle but complier does not know that so we need to write like this
+        // So that it can call methods of Vehicle
         ((Vehicle) eCar).start();
         ((Vehicle) eCar).calculateFuelEfficiency();
         eCar.charge();
