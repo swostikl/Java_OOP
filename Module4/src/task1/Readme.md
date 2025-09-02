@@ -1,6 +1,7 @@
-# This is a about how i used the GitHub Copilot to complete code for example using Github copilot to write methods in a Calculator class that has the ability to sum positive integers. A negative integer should throw an exception.
+#Task 2
+** This is a about how i used the GitHub Copilot to complete code for example using Github copilot to write methods in a Calculator class that has the ability to sum positive integers. A negative integer should throw an exception.
 
-.# Calculator Class with Sum Method
+**Calculator Class with Sum Method
 
 ```pythonpackage task1;
 
@@ -45,7 +46,7 @@ public class Calculator {
     }
 }
 ```
-# Explanation how the  Calculator Class works
+#Explanation how the  Calculator Class works
 The `Calculator` class is designed to perform basic arithmetic operations, specifically summing positive integers. It includes the following key components:
 The calculator keeps track of an internal value, starting at zero.
 The add(int number) method adds a positive integer to the value. If a negative number is provided, it throws a NegativeNumberException.
