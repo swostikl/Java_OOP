@@ -47,10 +47,23 @@ public class Calculator {
 }
 ```
 **Explanation how the  Calculator Class works**
-The `Calculator` class is designed to perform basic arithmetic operations, specifically summing positive integers. It includes the following key components:
+The `Calculator` class is designed to perform basic arithmetic operations, specifically summing positive integers. It 
+includes the following key components:
 The calculator keeps track of an internal value, starting at zero.
-The add(int number) method adds a positive integer to the value. If a negative number is provided, it throws a NegativeNumberException.
+The add(int number) method adds a positive integer to the value. If a negative number is provided, it throws a 
+NegativeNumberException.
 The reset() method sets the value back to zero.
 The getValue() method returns the current value.
 The main method demonstrates usage: it adds numbers, prints the result, resets the calculator, and prints the value again. 
 If a negative number is added, the exception message is shown.
+
+
+**How you used GitHub Copilot to write the code. For each assignment, evaluate the applicability of GitHub Copilot for 
+your own coding style. What are the benefits and drawbacks of using GitHub Copilot?**
+
+When I started writing the `Calculator` class, I began by defining the class structure and the methods I wanted to include in comment. 
+As I wrote the comments, GitHub Copilot provided suggestions for the method implementations and I just did was press tab, tab and tab. 
+For example, when I started writing the `add` method, Copilot suggested code to check for negative numbers and throw an exception. I accepted 
+this suggestion and modified it slightly to fit my needs. I just had to ensure that the exception handling was correctly 
+implemented. And later I used GitHub Copilot chat to explain how the code works.
+
