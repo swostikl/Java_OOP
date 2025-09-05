@@ -67,3 +67,7 @@ For example, when I started writing the `add` method, Copilot suggested code to 
 this suggestion and modified it slightly to fit my needs. I just had to ensure that the exception handling was correctly 
 implemented. And later I used GitHub Copilot chat to explain how the code works.
 
+**Drawbacks :**
+- When I started to use GitHub Copilot and tried to do some assignments it keeps on giving me suggestions which i did not like at all because after that i did not really want to use my mind. 
+When I use Copilot, my habit become lazy lets say. I read my question and I directly ask GitHub Copilot how to solve it, so when reflecting on myself I was lazy and did not use my mind so, inorder to learn i disable the copilot but yeah ofcourse if i am confused or stock in somewhere i take help from it.
+- **Benefits:** When i wrote a very long version or little complicated solution for my task, it helps mt ot do in simpler form and it also suggest me how i can do it in better way. so yeah it also helped me on learning.
